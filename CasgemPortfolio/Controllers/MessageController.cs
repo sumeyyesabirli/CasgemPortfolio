@@ -9,7 +9,7 @@ namespace CasgemPortfolio.Controllers
 {
     public class MessageController : Controller
     {
-        CasgemPortfolioEntities3 db = new CasgemPortfolioEntities3();
+        CasgemPortfolioEntities db = new CasgemPortfolioEntities();
         public ActionResult Index()
         {
             var values = db.TblMessage.ToList();

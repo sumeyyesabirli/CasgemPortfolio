@@ -13,10 +13,10 @@ namespace CasgemPortfolio.Models.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CasgemPortfolioEntities3 : DbContext
+    public partial class CasgemPortfolioEntities : DbContext
     {
-        public CasgemPortfolioEntities3()
-            : base("name=CasgemPortfolioEntities3")
+        public CasgemPortfolioEntities()
+            : base("name=CasgemPortfolioEntities")
         {
         }
     

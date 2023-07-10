@@ -13,7 +13,7 @@ namespace CasgemPortfolio.Controllers
     {
 
         // GET: Service
-        CasgemPortfolioEntities3 db = new CasgemPortfolioEntities3();
+        CasgemPortfolioEntities db = new CasgemPortfolioEntities();
         public ActionResult Index()
         {
             var values = db.TblService.ToList();

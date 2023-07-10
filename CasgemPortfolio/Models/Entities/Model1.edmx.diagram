@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="21d0fcffa0124d408c49d095b3560122" Name="Diagram1">
+      <Diagram DiagramId="e528e6c95c0c4db795fb3eb08e9a80e4" Name="Diagram1">
         <EntityTypeShape EntityType="CasgemPortfolioModel.TblFeature" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.TblMessage" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.TblService" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />

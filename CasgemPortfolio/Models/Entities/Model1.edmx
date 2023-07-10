@@ -28,7 +28,7 @@
           <Key>
             <PropertyRef Name="ServiceID" />
           </Key>
-          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="ServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ServiceTitle" Type="nvarchar" MaxLength="100" />
           <Property Name="ServiceIcon" Type="nvarchar" MaxLength="100" />
           <Property Name="ServiceNumber" Type="char" MaxLength="2" />
@@ -67,13 +67,13 @@
           <Key>
             <PropertyRef Name="ServiceID" />
           </Key>
-          <Property Name="ServiceID" Type="Int32" Nullable="false" />
+          <Property Name="ServiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ServiceTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="ServiceIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="ServiceNumber" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
           <Property Name="ServiceContent" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="CasgemPortfolioEntities3" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CasgemPortfolioEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblFeature" EntityType="Self.TblFeature" />
           <EntitySet Name="TblMessage" EntityType="Self.TblMessage" />
           <EntitySet Name="TblService" EntityType="Self.TblService" />
@@ -83,7 +83,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CasgemPortfolioModelStoreContainer" CdmEntityContainer="CasgemPortfolioEntities3">
+        <EntityContainerMapping StorageEntityContainer="CasgemPortfolioModelStoreContainer" CdmEntityContainer="CasgemPortfolioEntities">
           <EntitySetMapping Name="TblFeature">
             <EntityTypeMapping TypeName="CasgemPortfolioModel.TblFeature">
               <MappingFragment StoreEntitySet="TblFeature">
