@@ -10,17 +10,17 @@ using CasgemPortfolio.Models.Entities;
 namespace CasgemPortfolio.Controllers
 {
     public class ServiceController : Controller
-    {           
-      
+    {
+
         // GET: Service
-        CasgemPortfolioEntities db = new CasgemPortfolioEntities();
+        CasgemPortfolioEntities3 db = new CasgemPortfolioEntities3();
         public ActionResult Index()
         {
             var values = db.TblService.ToList();
             return View(values);
         }
         [HttpGet]
-        public ActionResult Service()
+        public ActionResult AddService()
         {
             return View();
         }
@@ -29,9 +29,8 @@ namespace CasgemPortfolio.Controllers
         {
             db.TblService.Add(p);
             db.SaveChanges();
-            return RedirectToAction("İndex");
+            return RedirectToAction("Index");
         }
-
         public ActionResult DeleteService(int id)
         {
             var value = db.TblService.Find(id);
@@ -39,10 +38,22 @@ namespace CasgemPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
         public ActionResult UpdateService(int id)
         {
             var value = db.TblService.Find(id);
             return View(value);
+        }
+        [HttpPost]
+        public ActionResult UpdateService(TblService p)
+        {
+            var value = db.TblService.Find(p.ServiceID);
+            value.ServiceTitle = p.ServiceTitle;
+            value.ServiceIcon = p.ServiceIcon;
+            value.ServiceNumber = p.ServiceNumber;
+            value.ServiceContent = p.ServiceContent;
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
     }

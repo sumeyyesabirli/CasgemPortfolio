@@ -8,7 +8,6 @@ namespace CasgemPortfolio.Controllers
 {
     public class FeatureController : Controller
     {
-        
         public ActionResult Index()
         {
             return View();

@@ -73,7 +73,7 @@
           <Property Name="ServiceNumber" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
           <Property Name="ServiceContent" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="CasgemPortfolioEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CasgemPortfolioEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblFeature" EntityType="Self.TblFeature" />
           <EntitySet Name="TblMessage" EntityType="Self.TblMessage" />
           <EntitySet Name="TblService" EntityType="Self.TblService" />
@@ -83,7 +83,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CasgemPortfolioModelStoreContainer" CdmEntityContainer="CasgemPortfolioEntities2">
+        <EntityContainerMapping StorageEntityContainer="CasgemPortfolioModelStoreContainer" CdmEntityContainer="CasgemPortfolioEntities3">
           <EntitySetMapping Name="TblFeature">
             <EntityTypeMapping TypeName="CasgemPortfolioModel.TblFeature">
               <MappingFragment StoreEntitySet="TblFeature">

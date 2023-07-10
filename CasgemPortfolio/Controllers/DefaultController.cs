@@ -8,7 +8,7 @@ namespace CasgemPortfolio.Controllers
 {
     public class DefaultController : Controller
     {
-        
+
         public ActionResult Index()
         {
             return View();
@@ -16,16 +16,13 @@ namespace CasgemPortfolio.Controllers
 
         public ActionResult PersonList()
         {
-
             return View();
         }
 
         public ActionResult DepartmentList()
         {
             return View();
-
         }
-
 
     }
 }
