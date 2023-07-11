@@ -7,7 +7,8 @@
       <Diagram DiagramId="e528e6c95c0c4db795fb3eb08e9a80e4" Name="Diagram1">
         <EntityTypeShape EntityType="CasgemPortfolioModel.TblFeature" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CasgemPortfolioModel.TblMessage" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CasgemPortfolioModel.TblService" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.TblService" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasgemPortfolioModel.TblResume" Width="1.5" PointX="8" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
