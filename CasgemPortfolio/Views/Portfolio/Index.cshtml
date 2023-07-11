@@ -12,7 +12,6 @@ Author URL: http://w3layouts.com
 
 @Html.Partial("PartialHead")
 
-
 <body>
     <!-- header -->
     @Html.Partial("PartialNavbar")
@@ -40,7 +39,8 @@ Author URL: http://w3layouts.com
                             dolor sit, amet consectetur adipisicing elit. Dolor ipsum non velit reprehenderit, molestias
                             culpa!
                         </p>
-                        <a href="#download" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+
+
                     </div>
                 </div>
             </div>
@@ -48,20 +48,8 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //home page about section -->
     <!-- home page second section -->
-    <div class="py-5 w3l-resume">
-        <div class="container py-lg-5 py-3">
-            <h5 class="title-small mb-2"> My resume</h5>
-            <h3 class="title-big mb-4">I Would Love to make your Ideas real </h3>
-            <p>
-                I love graphic design and photography and have been working on my portfolio since 2016. You can download my
-                resume in order to learn the details of my professional life as a designer and photographer. Contact me and
-                we will discuss your projects!
-            </p>
-            <div class="mt-5">
-                <a href="#download" class="btn btn-style btn-primary">Download resume</a>
-            </div>
-        </div>
-    </div>
+    <!-- home page second section -->
+    @Html.Action("MyResume")
     <!-- //home page second section -->
     <!-- home page services section -->
     <section class="w3l-services">
@@ -186,32 +174,7 @@ Author URL: http://w3layouts.com
     </section>
     <!-- //home page services section -->
     <!-- stats -->
-    <section class="w3l-stats py-lg-5 py-4" id="stats">
-        <div class="gallery-inner container py-md-5 py-4">
-            <div class="row stats-con">
-                <div class="col-sm-3 col-6 stats_info counter_grid">
-                    <span class="fa fa-laptop"></span>
-                    <p class="counter">700</p>
-                    <h4>Completed projects</h4>
-                </div>
-                <div class="col-sm-3 col-6 stats_info counter_grid1">
-                    <span class="fa fa-hourglass-end"></span>
-                    <p class="counter">120</p>
-                    <h4>In processes</h4>
-                </div>
-                <div class="col-sm-3 col-6 stats_info counter_grid mt-sm-0 mt-5">
-                    <span class="fa fa-gift"></span>
-                    <p class="counter">12</p>
-                    <h4>Awards Received</h4>
-                </div>
-                <div class="col-sm-3 col-6 stats_info counter_grid2 mt-sm-0 mt-5">
-                    <span class="fa fa-smile-o"></span>
-                    <p class="counter">1050</p>
-                    <h4>Happy Clients</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+    @Html.Action("PartialStatistic")
     <!-- //stats -->
     <!-- testimonials -->
     <section class="w3l-clients" id="clients">

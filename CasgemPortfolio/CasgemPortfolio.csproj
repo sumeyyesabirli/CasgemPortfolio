@@ -397,10 +397,11 @@
     <Content Include="Views\Portfolio\PartialStatistic.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Statistic\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Templates\file\SumeyyeSabirli.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

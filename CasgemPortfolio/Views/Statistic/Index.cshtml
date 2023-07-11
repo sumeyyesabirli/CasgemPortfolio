@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
 }
@@ -10,23 +11,39 @@
         <h5 class="card-title" style="color:white">Toplam Personel Sayısı: @ViewBag.employeeCount</h5>
     </div>
 </div>
-<div class="card text-white bg-secondary mb-3" style="width: 100%">
+
+<div class="card text-white bg-info mb-3" style="width:100%">
     <div class="card-body">
-        <h5 class="card-title">En Yüksek Maaşlı Personel: @ViewBag.employeeSalary</h5>
+        <h5 class="card-title" style="color:white">En Yüksek Maaşlı Personel: @ViewBag.maxSalaryEmployee</h5>
     </div>
 </div>
-<div class="card text-white bg-warning mb-3" style="width=100%">
+
+<div class="card text-white bg-dark mb-3" style="width:100%">
     <div class="card-body">
-        <h5 class="card-title">Toplam Şehir Sayısı: @ViewBag.totalCityCoun</h5>
+        <h5 class="card-title" style="color:white">Toplam Şehir Sayısı: @ViewBag.totalCityCount</h5>
     </div>
 </div>
-<div class="card text-white bg-dark mb-3" style="width=100%">
+
+<div class="card text-white bg-warning mb-3" style="width:100%">
     <div class="card-body">
-        <h5 class="card-title">Yazılım Departmanı Personel Saysıı: @ViewBag.countSoftwareDepartment</h5>
+        <h5 class="card-title" style="color:white">Ortalama Personel Maaşı: @ViewBag.avgEmployeeSalary</h5>
     </div>
 </div>
-<div class="card bg-light mb-3" style="100%">
+
+<div class="card text-white bg-success mb-3" style="width:100%">
     <div class="card-body">
-        <h5 class="card-title">Maksimum Maaşa Sahip Personel: @ViewBag.maxSalaryEmployee</h5>
+        <h5 class="card-title" style="color:white">Yazılım Departmanı Personel Sayısı: @ViewBag.countSoftwareDepartment</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-danger mb-3" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title" style="color:white">Ankara veya Adana'daki Toplam Personel Maaşı: @ViewBag.cityAnkaraOrAdanaSumSalary</h5>
+    </div>
+</div>
+
+<div class="card text-white bg-light mb-3" style="width:100%">
+    <div class="card-body">
+        <h5 class="card-title" style="color:black">Ankara'daki Yazılımcıların Maaşı: @ViewBag.sumSalaryFromSoftwareDepartment</h5>
     </div>
 </div>

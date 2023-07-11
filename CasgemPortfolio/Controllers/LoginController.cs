@@ -13,5 +13,10 @@ namespace CasgemPortfolio.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Index(int y)
+        {
+            return View();
+        }
     }
 }

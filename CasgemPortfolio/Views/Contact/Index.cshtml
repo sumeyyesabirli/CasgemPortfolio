@@ -3,43 +3,27 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
 <!doctype html>
 <html lang="en">
-@Html.Action("PartialHead","Portfolio")
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Alexander Personal Portfolio Category Bootstrap Responsive Website Template | Contact : W3layouts</title>
-
-    <!-- google fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-</head>
+@Html.Action("PartialHead", "Portfolio")
 
 <body>
     <!-- header -->
     @Html.Action("PartialNavbar", "Portfolio")
-
     <!-- //header -->
     <!-- contact breadcrumb -->
     <section class="w3l-about-breadcrumb text-center">
         <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
             <div class="container py-2">
-                <h2 class="title">Contact Me</h2>
+                <h2 class="title">İletişim</h2>
                 <ul class="breadcrumbs-custom-path mt-2">
-                    <li><a href="#url">Home</a></li>
-                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contact </li>
+                    <li><a href="#url">Anasayfa</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> İletişim </li>
                 </ul>
             </div>
         </div>
@@ -57,7 +41,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-phone text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>Call Me</h6>
+                                <h6>İletişim</h6>
                                 <p><a href="tel:+44 99 555 42">+123 45 67 89</a></p>
                             </div>
                         </div>
@@ -66,7 +50,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-envelope-o text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>Email Me</h6>
+                                <h6>Email</h6>
                                 <p><a href="mailto:example@mail.com" class="mail">example@mail.com</a></p>
                             </div>
                         </div>
@@ -75,7 +59,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-map-marker text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>Location</h6>
+                                <h6>Adres</h6>
                                 <p>Address here, 208 Trainer Avenue street, Illinois, UK - 62617.</p>
                             </div>
                         </div>
@@ -83,19 +67,19 @@ Author URL: http://w3layouts.com
                     <div class="map-content-9">
                         <form method="post">
                             <div class="twice-two">
-                                <input type="text" class="form-control" name="NameSurName" id="w3lName" placeholder="Adınız"
+                                <input type="text" class="form-control" name="NameSurname" id="w3lName" placeholder="Adınız"
                                        required="">
                                 <input type="email" class="form-control" name="SenderMail" id="w3lSender" placeholder="Mail Adresiniz"
                                        required="">
                             </div>
                             <div class="twice">
-                                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject"
-                                       placeholder="Subject" required="">
+                                <input type="text" class="form-control" name="MessageSubject" id="w3lSubject"
+                                       placeholder="Konu" required="">
                             </div>
-                            <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+                            <textarea name="Content" class="form-control" id="w3lMessage" placeholder="Mesajınızı Yazabilirsiniz"
                                       required=""></textarea>
                             <div class="text-right">
-                                <button type="submit" class="btn btn-primary btn-style mt-4">Send Message</button>
+                                <button type="submit" class="btn btn-primary btn-style mt-4">Mesajı Gönder</button>
                             </div>
                         </form>
                     </div>
@@ -105,7 +89,7 @@ Author URL: http://w3layouts.com
     </section>
     <!-- /contact1 -->
     <div class="map-iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195360.35335232734!2d32.68022791956674!3d40.08644068234652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40820fdad0c982a9%3A0xf13ed2bab75c76d6!2sAnkara%20Esenbo%C4%9Fa%20Havaliman%C4%B1!5e0!3m2!1str!2str!4v1689066301501!5m2!1str!2str"
                 width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
     </div>
     <!-- //contact block -->
@@ -120,7 +104,7 @@ Author URL: http://w3layouts.com
                     <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
                         <ul class="social m-0 p-0">
                             <li><a href="#facebook"><span class="fa fa-facebook-official"></span></a></li>
-                            <li><a href="#linkedin"><span class="fa fa-linkedin-square"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/sumeyyesabirli/"><span class="fa fa-linkedin-square"></span></a></li>
                             <li><a href="#instagram"><span class="fa fa-instagram"></span></a></li>
                             <li><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
                         </ul>
@@ -151,8 +135,7 @@ Author URL: http://w3layouts.com
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
-            }
-        </script>
+            }</script>
         <!-- /move top -->
     </section>
     <!-- //Footer -->
@@ -204,8 +187,7 @@ Author URL: http://w3layouts.com
 
         document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
             if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
-    </script>
+        });</script>
     <!-- //typig-text-->
     <!-- services owlcarousel -->
     <script src="assets/js/owl.carousel.js"></script>
@@ -241,8 +223,7 @@ Author URL: http://w3layouts.com
                     }
                 }
             })
-        })
-    </script>
+        })</script>
     <!-- //script for services -->
     <!-- script for tesimonials carousel slider -->
     <script>
@@ -268,8 +249,7 @@ Author URL: http://w3layouts.com
                     }
                 }
             })
-        })
-    </script>
+        })</script>
     <!-- //script for tesimonials carousel slider -->
     <!-- video popup -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -306,15 +286,12 @@ Author URL: http://w3layouts.com
                 removalDelay: 300,
                 mainClass: 'my-mfp-slide-bottom'
             });
-        });
-    </script>
+        });</script>
     <!-- //video popup -->
     <!-- stats number counter-->
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
+    <script>$('.counter').countUp();</script>
     <!-- //stats number counter -->
     <!-- disable body scroll which navbar is in active -->
     <script>
@@ -322,8 +299,7 @@ Author URL: http://w3layouts.com
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             })
-        });
-    </script>
+        });</script>
     <!-- disable body scroll which navbar is in active -->
     <!--/MENU-JS-->
     <script>
@@ -350,8 +326,7 @@ Author URL: http://w3layouts.com
                     $("header").removeClass("active");
                 }
             });
-        });
-    </script>
+        });</script>
     <!--//MENU-JS-->
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
