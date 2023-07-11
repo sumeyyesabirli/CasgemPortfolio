@@ -20,10 +20,10 @@ Author URL: http://w3layouts.com
     <section class="w3l-about-breadcrumb text-center">
         <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
             <div class="container py-2">
-                <h2 class="title">İletişim</h2>
+                <h2 class="title">Contact Me</h2>
                 <ul class="breadcrumbs-custom-path mt-2">
-                    <li><a href="#url">Anasayfa</a></li>
-                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> İletişim </li>
+                    <li><a href="#url">Home</a></li>
+                    <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Contact </li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-phone text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>İletişim</h6>
+                                <h6>Call Me</h6>
                                 <p><a href="tel:+44 99 555 42">+123 45 67 89</a></p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-envelope-o text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>Email</h6>
+                                <h6>Email Me</h6>
                                 <p><a href="mailto:example@mail.com" class="mail">example@mail.com</a></p>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ Author URL: http://w3layouts.com
                                 <span class="fa fa-map-marker text-primary"></span>
                             </div>
                             <div class="cont-right">
-                                <h6>Adres</h6>
+                                <h6>Location</h6>
                                 <p>Address here, 208 Trainer Avenue street, Illinois, UK - 62617.</p>
                             </div>
                         </div>
@@ -78,9 +78,17 @@ Author URL: http://w3layouts.com
                             </div>
                             <textarea name="Content" class="form-control" id="w3lMessage" placeholder="Mesajınızı Yazabilirsiniz"
                                       required=""></textarea>
+
                             <div class="text-right">
-                                <button type="submit" class="btn btn-primary btn-style mt-4">Mesajı Gönder</button>
+                                <button type="submit" class="btn btn-primary btn-style mt-4" onclick="showAlert()">Mesajı Gönder</button>
                             </div>
+
+                            <script>
+                                function showAlert() {
+                                    alert("Mesajınız gönderildi!");
+                                }
+                            </script>
+
                         </form>
                     </div>
                 </div>
@@ -104,7 +112,7 @@ Author URL: http://w3layouts.com
                     <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
                         <ul class="social m-0 p-0">
                             <li><a href="#facebook"><span class="fa fa-facebook-official"></span></a></li>
-                            <li><a href="https://www.linkedin.com/in/sumeyyesabirli/"><span class="fa fa-linkedin-square"></span></a></li>
+                            <li><a href="#linkedin"><span class="fa fa-linkedin-square"></span></a></li>
                             <li><a href="#instagram"><span class="fa fa-instagram"></span></a></li>
                             <li><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
                         </ul>
