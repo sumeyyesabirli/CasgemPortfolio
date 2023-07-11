@@ -1,4 +1,9 @@
-﻿<!--
+﻿
+@{
+    Layout = null;
+}
+
+<!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
@@ -11,7 +16,6 @@ Author URL: http://w3layouts.com
 <body>
     <!-- header -->
     @Html.Partial("PartialNavbar")
-
     <!-- //header -->
     <!-- banner section -->
     @Html.Action("PartialFeature")
@@ -459,8 +463,7 @@ Author URL: http://w3layouts.com
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
-            }
-        </script>
+            }</script>
         <!-- /move top -->
     </section>
     <!-- //Footer -->
@@ -512,8 +515,7 @@ Author URL: http://w3layouts.com
 
         document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
             if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
-    </script>
+        });</script>
     <!-- //typig-text-->
     <!-- services owlcarousel -->
     <script src="assets/js/owl.carousel.js"></script>
@@ -549,8 +551,7 @@ Author URL: http://w3layouts.com
                     }
                 }
             })
-        })
-    </script>
+        })</script>
     <!-- //script for services -->
     <!-- script for tesimonials carousel slider -->
     <script>
@@ -576,8 +577,7 @@ Author URL: http://w3layouts.com
                     }
                 }
             })
-        })
-    </script>
+        })</script>
     <!-- //script for tesimonials carousel slider -->
     <!-- video popup -->
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
@@ -614,15 +614,12 @@ Author URL: http://w3layouts.com
                 removalDelay: 300,
                 mainClass: 'my-mfp-slide-bottom'
             });
-        });
-    </script>
+        });</script>
     <!-- //video popup -->
     <!-- stats number counter-->
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
+    <script>$('.counter').countUp();</script>
     <!-- //stats number counter -->
     <!-- disable body scroll which navbar is in active -->
     <script>
@@ -630,8 +627,7 @@ Author URL: http://w3layouts.com
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
             })
-        });
-    </script>
+        });</script>
     <!-- disable body scroll which navbar is in active -->
     <!--/MENU-JS-->
     <script>
@@ -658,8 +654,7 @@ Author URL: http://w3layouts.com
                     $("header").removeClass("active");
                 }
             });
-        });
-    </script>
+        });</script>
     <!--//MENU-JS-->
     <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
