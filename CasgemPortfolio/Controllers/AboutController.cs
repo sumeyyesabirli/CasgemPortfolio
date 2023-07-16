@@ -28,15 +28,6 @@ namespace Casgem_Portfolio.Controllers
             return PartialView();
         }
 
-        public PartialViewResult PartialSkillDegree()
-        {
-            ViewBag.title = db.TblSkillDescription.Select(x => x.SkillDesTitle).FirstOrDefault();
-            ViewBag.des = db.TblSkillDescription.Select(x => x.SkillDescription).FirstOrDefault();
-
-            var values = db.TblSkillDegree.ToList();
-            return PartialView(values);
-        }
-
         public PartialViewResult PartialAchievement()
         {
             var values = db.TblAchievement.ToList();

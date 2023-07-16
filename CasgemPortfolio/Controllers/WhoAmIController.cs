@@ -4,7 +4,7 @@ using System.Web.Mvc;
 
 namespace Casgem_Portfolio.Controllers
 {
-    [Authorize]
+    
     public class WhoAmIController : Controller
     {
         CasgemPortfolioEntities4 db = new CasgemPortfolioEntities4();

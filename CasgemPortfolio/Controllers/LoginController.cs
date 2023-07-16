@@ -17,19 +17,32 @@ namespace Casgem_Portfolio.Controllers
         [HttpPost]
         public ActionResult Index(TblAdmin admin)
         {
-            var values = db.TblAdmin.FirstOrDefault(x => x.Username == admin.Username && x.Password == admin.Password);
+           // var values = db.TblAdmin.FirstOrDefault(x => x.Username == admin.Username && x.Password == admin.Password);
+           //
+           // if (values != null)
+           // {
+           //     FormsAuthentication.SetAuthCookie(values.Username, false);
+           //     Session["usertravel"] = values.Username.ToString();
+           //     return RedirectToAction("Index", "WhoAmI");
+           // }
+           // else
+           // {
+           //     return View();
+           // }
 
-            if (values != null)
+            var admininfo = db.TblAdmin.FirstOrDefault(x => x.Username == admin.Username && x.Password == admin.Password);
+
+            if (admininfo != null)
             {
-                FormsAuthentication.SetAuthCookie(values.Username, false);
-                Session["usertravel"] = values.Username.ToString();
-                return RedirectToAction("Index", "WhoAmI");
+                FormsAuthentication.SetAuthCookie(admininfo.Username, false);
+                Session["username"] = admininfo.Username;
+                return RedirectToAction("Index", "Whoami");
             }
             else
             {
-                return View();
+                ViewBag.ErrorMessage = "Kullanıcı adı ve/veya şifre yanlış.";
+                return View("GirisYap");
             }
-
 
         }
     }
