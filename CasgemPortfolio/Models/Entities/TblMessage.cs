@@ -14,7 +14,7 @@ namespace CasgemPortfolio.Models.Entities
     
     public partial class TblMessage
     {
-        public int MessageID { get; set; }
+        public int MessageId { get; set; }
         public string NameSurName { get; set; }
         public string SenderMail { get; set; }
         public string MessageSubject { get; set; }

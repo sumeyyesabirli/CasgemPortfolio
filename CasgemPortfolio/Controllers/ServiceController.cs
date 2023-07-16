@@ -1,29 +1,24 @@
-﻿using CasgemPortfolio.Models;
-using System;
-using System.Collections.Generic;
+﻿using CasgemPortfolio.Models.Entities;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using CasgemPortfolio.Models.Entities;
 
-
-namespace CasgemPortfolio.Controllers
+namespace Casgem_Portfolio.Controllers
 {
     public class ServiceController : Controller
     {
-
-        // GET: Service
-        CasgemPortfolioEntities db = new CasgemPortfolioEntities();
+        CasgemPortfolioEntities4 db = new CasgemPortfolioEntities4();
         public ActionResult Index()
         {
             var values = db.TblService.ToList();
             return View(values);
         }
+
         [HttpGet]
         public ActionResult AddService()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult AddService(TblService p)
         {
@@ -31,31 +26,33 @@ namespace CasgemPortfolio.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public ActionResult DeleteService(int id)
         {
-            var value = db.TblService.Find(id);
-            db.TblService.Remove(value);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-        [HttpGet]
-        public ActionResult UpdateService(int id)
-        {
-            var value = db.TblService.Find(id);
-            return View(value);
-        }
-        [HttpPost]
-        public ActionResult UpdateService(TblService p)
-        {
-            var value = db.TblService.Find(p.ServiceID);
-            value.ServiceTitle = p.ServiceTitle;
-            value.ServiceIcon = p.ServiceIcon;
-            value.ServiceNumber = p.ServiceNumber;
-            value.ServiceContent = p.ServiceContent;
+            var values = db.TblService.Find(id);
+            db.TblService.Remove(values);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var values = db.TblService.Find(id);
+
+            return View(values);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateService(TblService p)
+        {
+            var values = db.TblService.Find(p.ServiceId);
+            values.ServiceTitle = p.ServiceTitle;
+            values.ServiceNumber = p.ServiceNumber;
+            values.ServiceContent = p.ServiceContent;
+            values.ServiceIcon = p.ServiceIcon;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
-    
 }

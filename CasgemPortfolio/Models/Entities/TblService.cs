@@ -14,7 +14,7 @@ namespace CasgemPortfolio.Models.Entities
     
     public partial class TblService
     {
-        public int ServiceID { get; set; }
+        public int ServiceId { get; set; }
         public string ServiceTitle { get; set; }
         public string ServiceIcon { get; set; }
         public string ServiceNumber { get; set; }

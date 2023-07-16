@@ -14,7 +14,7 @@ namespace CasgemPortfolio.Models.Entities
     
     public partial class TblEmployee
     {
-        public int EmployeeID { get; set; }
+        public int EmployeeId { get; set; }
         public string EmployeeName { get; set; }
         public string EmployeeSurName { get; set; }
         public string EmployeeCity { get; set; }

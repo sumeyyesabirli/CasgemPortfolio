@@ -14,7 +14,7 @@ namespace CasgemPortfolio.Models.Entities
     
     public partial class TblResume
     {
-        public int ResumeID { get; set; }
+        public int ResumeId { get; set; }
         public string Title1 { get; set; }
         public string Title2 { get; set; }
         public string Description { get; set; }

@@ -5,20 +5,21 @@
 }
 
 <h2>Hizmet Güncelleme Sayfası</h2>
-
 <form method="post">
-    @Html.HiddenFor(x => x.ServiceID)
-    <label>Hizmet Başlığı</label>
+    @Html.HiddenFor(x => x.ServiceId)
+    @Html.Label("Hizmet Başlığı")
     @Html.TextBoxFor(x => x.ServiceTitle, new { @class = "form-control" })
     <br />
-    <label>Hizmet İkonu</label>
+    @Html.Label("Hizmet İkonu")
     @Html.TextBoxFor(x => x.ServiceIcon, new { @class = "form-control" })
     <br />
-    <label>Hizmet Servis Numarası</label>
+    @Html.Label("Hizmet Servis Numarası")
     @Html.TextBoxFor(x => x.ServiceNumber, new { @class = "form-control" })
     <br />
-    <label>Hizmet İçeriği</label>
+    @Html.Label("Hizmet İçeriği")
     @Html.TextBoxFor(x => x.ServiceContent, new { @class = "form-control" })
     <br />
-    <button class="btn btn-success">Verileri Güncelle</button>
+
+    <button class="btn btn-success">Hizmeti Güncelle</button>
 </form>
+

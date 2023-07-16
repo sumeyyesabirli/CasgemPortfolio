@@ -14,7 +14,7 @@ namespace CasgemPortfolio.Models.Entities
     
     public partial class TblFeature
     {
-        public int FeatureID { get; set; }
+        public int FeatureId { get; set; }
         public string FeatureTitle { get; set; }
         public string FeatureDescription { get; set; }
         public string FeatureImageURL { get; set; }
